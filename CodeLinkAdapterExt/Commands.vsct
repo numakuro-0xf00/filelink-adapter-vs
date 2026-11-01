@@ -15,14 +15,11 @@
           <ButtonText>Codexリンクをクリップボードから開く</ButtonText>
           <CommandName>OpenCodexLinkFromClipboard</CommandName>
           <CanonicalName>OpenCodexLinkFromClipboard</CanonicalName>
+          <LocCanonicalName>OpenCodexLinkFromClipboard</LocCanonicalName>
         </Strings>
       </Button>
     </Buttons>
   </Commands>
-  <KeyBindings>
-    <KeyBinding guid="guidCodeLinkAdapterExtCommandSet" id="OpenCodexLinkFromClipboard"
-                editor="guidVSStd97" key1="K" mod1="Control Alt" key2="L" mod2="Control Alt" />
-  </KeyBindings>
   <Symbols>
     <GuidSymbol name="guidCodeLinkAdapterExtPackage" value="{23b43816-5f26-491a-82e7-0a5b15b47a18}" />
     <GuidSymbol name="guidCodeLinkAdapterExtCommandSet" value="{7baeb474-9137-4479-8caf-520994ecf8f2}">

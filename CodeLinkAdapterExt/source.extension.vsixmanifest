@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="CodeLinkAdapterExt.928916a4-d1ce-4630-8644-ddb75a63d627" Version="1.0.0" Language="ja-JP" Publisher="CodeLinkAdapterExt" />
+    <Identity Id="CodeLinkAdapterExt.928916a4-d1ce-4630-8644-ddb75a63d627" Version="1.0.1" Language="ja-JP" Publisher="CodeLinkAdapterExt" />
     <DisplayName>Code Link Adapter</DisplayName>
     <Description>Codexからコピーしたファイルリンクを開き、指定した行と列へ移動します。</Description>
   </Metadata>
