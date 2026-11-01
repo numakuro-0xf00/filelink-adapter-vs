@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CodeLinkAdapterExt/CodeLinkAdapterExt.csproj">
+    <Deploy />
+  </Project>
+  <Project Path="CodeLinkAdapterExt.Tests/CodeLinkAdapterExt.Tests.csproj" />
+</Solution>

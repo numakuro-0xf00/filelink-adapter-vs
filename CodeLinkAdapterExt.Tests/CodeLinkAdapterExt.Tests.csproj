@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.11.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.11.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CodeLinkAdapterExt\CodeLinkParser.cs" Link="CodeLinkParser.cs" />
+    <Compile Include="..\CodeLinkAdapterExt\CodeLinkTarget.cs" Link="CodeLinkTarget.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup>
+    <VssdkCompatibleExtension>true</VssdkCompatibleExtension>
+    <InstallationTargetVersion>[17.14, 18.0)</InstallationTargetVersion>
+    <PrerequisiteTargetVersion>$(InstallationTargetVersion)</PrerequisiteTargetVersion>
+    <GeneratePkgDefFile>true</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <ExtensionType>VSSDK</ExtensionType>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectCapability Include="CreateVsixContainer" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="18.9.820" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+  <Target Name="GetInstallationTargetVersion" Outputs="$(InstallationTargetVersion)" />
+  <ItemGroup>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <VSCTCompile Include="Commands.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
+  </ItemGroup>
+  <Target Name="GetPrerequisiteTargetVersion" Outputs="$(PrerequisiteTargetVersion)" />
+</Project>

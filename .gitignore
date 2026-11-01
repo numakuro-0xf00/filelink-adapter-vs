@@ -1,0 +1,14 @@
+# Visual Studio local settings
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build and test output
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+*.vsix
+*.nupkg
+*.snupkg

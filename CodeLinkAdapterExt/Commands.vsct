@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Commands package="guidCodeLinkAdapterExtPackage">
+    <Groups>
+      <Group guid="guidCodeLinkAdapterExtCommandSet" id="CodeLinkGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+    <Buttons>
+      <Button guid="guidCodeLinkAdapterExtCommandSet" id="OpenCodexLinkFromClipboard" priority="0x0100" type="Button">
+        <Parent guid="guidCodeLinkAdapterExtCommandSet" id="CodeLinkGroup" />
+        <Strings>
+          <ButtonText>Codexリンクをクリップボードから開く</ButtonText>
+          <CommandName>OpenCodexLinkFromClipboard</CommandName>
+          <CanonicalName>OpenCodexLinkFromClipboard</CanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+  <Symbols>
+    <GuidSymbol name="guidCodeLinkAdapterExtPackage" value="{23b43816-5f26-491a-82e7-0a5b15b47a18}" />
+    <GuidSymbol name="guidCodeLinkAdapterExtCommandSet" value="{7baeb474-9137-4479-8caf-520994ecf8f2}">
+      <IDSymbol name="CodeLinkGroup" value="0x1020" />
+      <IDSymbol name="OpenCodexLinkFromClipboard" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
